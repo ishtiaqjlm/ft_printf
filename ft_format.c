@@ -9,6 +9,7 @@
 /*   Updated: 2026/09/11 11:38:08 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "ft_printf.h"
 
 int	ft_format(char c, va_list args)
 {
@@ -24,8 +25,8 @@ int	ft_format(char c, va_list args)
 		return (ft_print_hex(va_arg(args, unsigned int), 0));
 	else if (c == 'X')
 		return (ft_print_hex(va_arg(args, unsigned int), 1));
-	else if (c == 'p')
-		return (ft_print_ptr(va_arg(args, unsigned long)));
+	/*else if (c == 'p')
+		return (ft_print_ptr(va_arg(args, unsigned long)));*/
 	else if (c == '%')
 		return (ft_print_char('%'));
 	return (0);

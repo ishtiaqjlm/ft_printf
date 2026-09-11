@@ -33,9 +33,16 @@ int	ft_printf(const char *format, ...)
 		else
 		{
 			write(1, &format[i], 1);
+			count++;
 			i++;
 		}
 	}
 	va_end(args);
 	return (count);
+}
+
+#include <stdio.h>
+int	main(void)
+{
+	ft_printf("%s and %s\n", "first", "second");
 }

@@ -12,6 +12,20 @@
 
 #include "ft_printf.h"
 
+static int	ft_print_nbr_helper(long nb)
+{
+	char	print;
+	int		count;
+
+	count = 0;
+	if (nb >= 10)
+		count = count + ft_print_nbr_helper(nb / 10);
+	print = nb % 10 + '0';
+	write(1, &print, 1);
+	count ++;
+	return (count);
+}
+
 int	ft_print_nbr(int n)
 {
 	long	nb;
@@ -26,11 +40,8 @@ int	ft_print_nbr(int n)
 		nb = -nb;
 		count++;
 	}
-	if (nb >=10)
-		count = count + ft_print_nbr( nb / 10);
-	print = nb % 10 + '0';
-	write(1, &print, 1);
-	count ++;
+	if (nb >= 10)
+		count = count + ft_print_nbr_helper(nb / 10);
 	return (count);
 }
 /*
