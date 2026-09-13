@@ -6,7 +6,7 @@
 /*   By: ishtiahm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 12:38:09 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/11 11:51:36 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/13 14:43:40 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,5 @@ int	ft_printf(const char *format, ...)
 #include <stdio.h>
 int	main(void)
 {
-	ft_printf("%s and %s\n", "first", "second");
+	printf("%p", NULL);
 }

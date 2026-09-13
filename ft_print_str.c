@@ -6,7 +6,7 @@
 /*   By: ishtiahm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 12:18:57 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/11 12:24:08 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/13 13:13:05 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_print_str(char *str)
 {
 	int	i;
 
+	if (!str)
+		return (write(1, "(null)", 6));
 	i = 0;
 	while (str[i] != '\0')
 	{
