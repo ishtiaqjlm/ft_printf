@@ -6,7 +6,7 @@
 /*   By: ishtiahm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 12:38:09 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/13 14:43:40 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/14 13:45:46 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(args);
 	return (count);
-}
-
-#include <stdio.h>
-int	main(void)
-{
-	printf("%p", NULL);
 }

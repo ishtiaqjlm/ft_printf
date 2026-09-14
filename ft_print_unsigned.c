@@ -6,7 +6,7 @@
 /*   By: ishtiahm <ishtiahm@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 17:47:41 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/13 09:57:14 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/14 13:47:27 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
@@ -24,11 +24,3 @@ int	ft_print_unsigned(unsigned int n)
 	count ++;
 	return (count);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	int	result;
-	result = ft_print_nbr(-123);
-	printf("result: %d\n", result);
-}*/

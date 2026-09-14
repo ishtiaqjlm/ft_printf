@@ -6,7 +6,7 @@
 /*   By: ishtiahm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 12:25:55 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/13 13:52:24 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/14 14:41:42 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	ft_print_nbr(int n)
 		write(1, "0", 1);
 		count++;
 	}
-	if (nb >= 10)
+	else
 		count = count + ft_print_nbr_helper(nb);
 	return (count);
 }

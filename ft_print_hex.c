@@ -6,12 +6,12 @@
 /*   By: ishtiahm <ishtiahm@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/11 17:51:58 by ishtiahm          #+#    #+#             */
-/*   Updated: 2026/09/13 09:52:48 by ishtiahm         ###   ########.fr       */
+/*   Updated: 2026/09/14 17:34:06 by ishtiahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ft_printf.h"
 
-int	ft_print_hex(unsigned int n, int uppercase)
+int	ft_print_hex(unsigned long n, int uppercase)
 {
 	char	print;
 	int		count;
